@@ -4,6 +4,7 @@
 <head>
     <script>
         (function () {
+            if(window.location.href.indexOf("localhost") < 0) {
             var input = prompt("Enter access code:");
             if (input !== "DEV") {
                 setTimeout(() => {
@@ -11,6 +12,7 @@
                 }, 100);
                 throw new Error('Access denied');
             }
+        }
         })();
     </script>
     <!-- ═══════════════════════════════════════════════════
@@ -127,14 +129,6 @@
     }
     </script>
 
-    <!-- ═══════════════════════════════════════════════════
-         FAVICON & APP ICONS
-    ═══════════════════════════════════════════════════ -->
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- ═══════════════════════════════════════════════════
-         STYLESHEET
-    ═══════════════════════════════════════════════════ -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -166,7 +160,6 @@
     <section class="hero" aria-label="Giới thiệu chiến dịch">
         <div class="hero-content">
             <div class="badge-partners fade-up">
-                <span class="flag">🇻🇳</span>
                 Chiến dịch Quốc gia · Bộ Y tế · Trung ương Đoàn · TLĐLĐ
             </div>
              <h1 class="fade-up" style="transition-delay:0.1s">
@@ -213,9 +206,9 @@
     <!-- ═══ MAP + FORM SECTION ═══ -->
     <section class="map-form-section" id="form-section" aria-label="Bản đồ và đăng ký">
         <div class="section-center" style="margin-bottom:42px">
-            <h2 class="section-title fade-up">
-                Thắp Sáng <span class="highlight">Tọa Độ Của Bạn</span>
-            </h2>
+             <h2 class="section-title fade-up">
+                 Thắp Sáng&nbsp;<span class="highlight">Tọa Độ Của Bạn</span>
+             </h2>
             <p class="section-sub fade-up">
                 Điền thông tin bên dưới — tọa độ của bạn sẽ sáng lên trên Bản đồ 10 triệu Gen Hạnh Phúc.
             </p>
@@ -489,9 +482,9 @@
     <!-- ═══ QUIZ SECTION ═══ -->
     <section class="quiz-section" id="quiz-section" aria-label="Trắc nghiệm Du hành Bản đồ Gene">
         <div class="section-center" style="margin-bottom:42px">
-            <h2 class="section-title fade-up">
-                Trắc Nghiệm <span class="highlight">Du Hành Bản Đồ Gene</span>
-            </h2>
+             <h2 class="section-title fade-up">
+                 Trắc Nghiệm&nbsp;<span class="highlight">Du Hành Bản Đồ Gene</span>
+             </h2>
             <p class="section-sub fade-up">
                 Khám phá mức độ sẵn sàng của bạn cho hành trình xây dựng gia đình khỏe mạnh.
             </p>
