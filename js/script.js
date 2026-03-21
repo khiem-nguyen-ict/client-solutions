@@ -400,13 +400,13 @@ function showQuizResult() {
     <div style="text-align:center;padding:20px 0;">
       <div style="font-size:3.5rem;margin-bottom:16px;">${emoji}</div>
       <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Kết quả của bạn</div>
-      <div style="font-size:1.5rem;font-weight:900;color:var(--teal);margin-bottom:20px;">${level}</div>
+      <div style="font-size:1.5rem;font-weight:700;color:var(--teal);margin-bottom:20px;">${level}</div>
       <div style="
         width:100px;height:100px;margin:0 auto 20px;
         border-radius:50%;
         background: conic-gradient(var(--teal) ${pct}%, rgba(255,255,255,0.08) 0%);
         display:flex;align-items:center;justify-content:center;
-        font-size:1.5rem;font-weight:900;color:var(--text-white);
+        font-size:1.5rem;font-weight:700;color:var(--text-white);
       ">${pct}%</div>
       <p style="font-size:0.88rem;color:var(--text-light);line-height:1.7;max-width:480px;margin:0 auto 28px;">${advice}</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">

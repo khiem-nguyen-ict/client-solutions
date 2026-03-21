@@ -110,7 +110,7 @@ function attachMapTooltips() {
     path.addEventListener("mouseenter", (e) => {
       const name = path.dataset.province;
       const cnt = (STATE.provinceData[name] || 0).toLocaleString("vi-VN");
-      tooltip.innerHTML = `<strong>${name}</strong>${cnt} Gen đã đăng ký`;
+      tooltip.innerHTML = `<strong>${name}</strong>${cnt}&nbsp;Gen đã đăng ký`;
       tooltip.classList.add("show");
     });
 
