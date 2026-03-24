@@ -1,5 +1,5 @@
 /* =============================================
-   BẢN ĐỒ 10 TRIỆU GEN HẠNH PHÚC — style.css
+   10 TRIỆU BẢN ĐỒ GEN HẠNH PHÚC — style.css
    ============================================= */
 
 :root {
@@ -38,6 +38,35 @@ body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+/* ── PARTICLES ── */
+/* ── TEMPORARY WARNING BANNERS (To be removed after official release) ── */
+.temp-warning-banner {
+  background: linear-gradient(90deg, #FF6B35, #F7931E);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 16px;
+  position: relative;
+  z-index: 9999;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(255,107,53,0.4);
+}
+.temp-warning-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.temp-warning-header + header {
+  margin-top: 0;
+}
+.temp-warning-footer {
+  margin-top: 40px;
+  border-top: 2px solid rgba(255,255,255,0.1);
+  background: linear-gradient(90deg, #E65100, #FF6B35);
+}
 
 /* ── PARTICLES ── */
 #particles-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
@@ -252,7 +281,7 @@ section { position: relative; z-index: 1; }
 .form-group  { margin-bottom: 22px; }
 .form-label  { display: block; font-size: 0.9rem; font-weight: 700; color: var(--text-light); margin-bottom: 9px; letter-spacing: .3px; }
 .form-label .required { color: var(--accent); margin-left: 3px; }
-.form-label .hint     { color: var(--text-muted); font-weight: 400; font-size: 0.8rem; font-style: italic; margin-left: 8px; }
+.form-label .hint     { color: var(--text-muted); font-weight: 400; font-size: 0.8rem; font-style: italic; margin-left: 8px; white-space: nowrap; }
 .form-input,.form-select {
   width: 100%; background: rgba(255,255,255,.04);
   border: 1px solid var(--border); border-radius: 13px;
@@ -454,7 +483,7 @@ footer {
   .stat-number{ font-size: 1.7rem; }
   .map-form-section { padding: 48px 4%; }
   .form-card  { padding: 26px 20px; }
-  .form-row   { grid-template-columns: 1fr; }
+  .form-row   { grid-template-columns: 1fr 1fr; gap: 10px; }
   .success-actions { grid-template-columns: 1fr; }
   .quiz-card  { padding: 28px 22px; }
   .knowledge-grid { grid-template-columns: 1fr; }

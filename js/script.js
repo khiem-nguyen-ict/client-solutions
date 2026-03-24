@@ -256,7 +256,7 @@ function attachFieldListeners() {
 function shareOnFacebook() {
   const url  = encodeURIComponent(window.location.href);
   const text = encodeURIComponent(
-    '🌿 Tôi vừa đặt dấu ấn trên Bản đồ 10 triệu Gen Hạnh Phúc! ' +
+    '🌿 Tôi vừa đặt dấu ấn trên 10 triệu bản đồ gen Hạnh Phúc! ' +
     'Cùng mình xác lập kỷ lục và an tâm sinh con trong kỷ nguyên y học chính xác 💚 ' +
     '#BanDo10TrieuGenHanhPhuc #GeneSolutions #triSureCarrier'
   );
@@ -392,7 +392,7 @@ function showQuizResult() {
     advice = 'Bạn đã có nhận thức tốt! Chỉ cần thêm một bước nhỏ — tư vấn với chuyên gia di truyền học — để hoàn thiện hành trình chuẩn bị của mình.';
   } else {
     level = 'Chiến Binh Gen Hạnh Phúc 💚'; emoji = '💚';
-    advice = 'Tuyệt vời! Bạn là hình mẫu của thế hệ sống trách nhiệm. Hãy chia sẻ kiến thức này đến cộng đồng và cùng xây dựng Bản đồ 10 triệu Gen Hạnh Phúc!';
+    advice = 'Tuyệt vời! Bạn là hình mẫu của thế hệ sống trách nhiệm. Hãy chia sẻ kiến thức này đến cộng đồng và cùng xây dựng 10 triệu bản đồ gen Hạnh Phúc!';
   }
 
   const wrap = document.getElementById('quiz-content');
