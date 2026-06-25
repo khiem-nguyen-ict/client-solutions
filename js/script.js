@@ -258,7 +258,7 @@ function shareOnFacebook() {
   const text = encodeURIComponent(
     '🌿 Tôi vừa đặt dấu ấn trên 10 triệu bản đồ gen Hạnh Phúc! ' +
     'Cùng mình xác lập kỷ lục và an tâm sinh con trong kỷ nguyên y học chính xác 💚 ' +
-    '#BanDo10TrieuGenHanhPhuc #GeneSolutions #triSureCarrier'
+    '#BanDo10TrieuGenHanhPhuc #ClientSolutions #CarrierCheck'
   );
   window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank', 'width=600,height=400');
 }
@@ -269,7 +269,7 @@ function shareOnZalo() {
 
 function shareOnTikTok() {
   // Copy caption to clipboard
-  const caption = '#BanDo10TrieuGenHanhPhuc #GeneSolutions #triSureCarrier #ChatLuongDanSoViet #YHocChinhXac';
+  const caption = '#BanDo10TrieuGenHanhPhuc #ClientSolutions #CarrierCheck #ChatLuongDanSoViet #YHocChinhXac';
   navigator.clipboard?.writeText(caption).then(() => {
     alert('Đã copy hashtag! Bạn mở TikTok và paste nhé 🎵\n\n' + caption);
   }).catch(() => {
